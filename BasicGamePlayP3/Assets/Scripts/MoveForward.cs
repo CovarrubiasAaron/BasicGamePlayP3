@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
+    public float horizontalInput;
     public float speed = 40.0f; 
     // Start is called before the first frame update
     void Start()
@@ -17,3 +18,4 @@ public class MoveForward : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
+
